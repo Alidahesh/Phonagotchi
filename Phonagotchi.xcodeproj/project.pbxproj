@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4124DA8C1DD53DC4000BF8BC /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4124DA8B1DD53DC4000BF8BC /* Pet.m */; };
 		602CAE411984363700C9FE49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602CAE401984363700C9FE49 /* Foundation.framework */; };
 		602CAE431984363700C9FE49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602CAE421984363700C9FE49 /* CoreGraphics.framework */; };
 		602CAE451984363700C9FE49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602CAE441984363700C9FE49 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4124DA8A1DD53DC4000BF8BC /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		4124DA8B1DD53DC4000BF8BC /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
 		602CAE3D1984363700C9FE49 /* Phonagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		602CAE401984363700C9FE49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		602CAE421984363700C9FE49 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,12 +62,12 @@
 		602CAE671984363900C9FE49 /* PhonagotchiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhonagotchiTests-Info.plist"; sourceTree = "<group>"; };
 		602CAE691984363900C9FE49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		602CAE6B1984363A00C9FE49 /* PhonagotchiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhonagotchiTests.m; sourceTree = "<group>"; };
-		607C5D311985A13300501387 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
-		607C5D321985A13300501387 /* sleeping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sleeping.png; sourceTree = "<group>"; };
-		607C5D331985A13300501387 /* grumpy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grumpy.png; sourceTree = "<group>"; };
+		607C5D311985A13300501387 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = Phonagotchi/default.png; sourceTree = "<group>"; };
+		607C5D321985A13300501387 /* sleeping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sleeping.png; path = Phonagotchi/sleeping.png; sourceTree = "<group>"; };
+		607C5D331985A13300501387 /* grumpy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grumpy.png; path = Phonagotchi/grumpy.png; sourceTree = "<group>"; };
 		AA79DD621C99C01C0098CD0D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		AFEF852819F082EB00C5C416 /* bucket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bucket.png; sourceTree = "<group>"; };
-		AFEF852919F082EB00C5C416 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		AFEF852819F082EB00C5C416 /* bucket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bucket.png; path = Phonagotchi/bucket.png; sourceTree = "<group>"; };
+		AFEF852919F082EB00C5C416 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = Phonagotchi/apple.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +94,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4124DA851DD514B2000BF8BC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4124DA861DD514BA000BF8BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4124DA881DD514D6000BF8BC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4124DA891DD5151E000BF8BC /* Assesst */ = {
+			isa = PBXGroup;
+			children = (
+				AFEF852819F082EB00C5C416 /* bucket.png */,
+				AFEF852919F082EB00C5C416 /* apple.png */,
+				607C5D311985A13300501387 /* default.png */,
+				607C5D321985A13300501387 /* sleeping.png */,
+				607C5D331985A13300501387 /* grumpy.png */,
+			);
+			name = Assesst;
+			sourceTree = "<group>";
+		};
 		602CAE341984363700C9FE49 = {
 			isa = PBXGroup;
 			children = (
+				4124DA891DD5151E000BF8BC /* Assesst */,
+				4124DA881DD514D6000BF8BC /* ViewController */,
+				4124DA861DD514BA000BF8BC /* Controller */,
+				4124DA851DD514B2000BF8BC /* UI */,
 				602CAE461984363700C9FE49 /* Phonagotchi */,
 				602CAE651984363900C9FE49 /* PhonagotchiTests */,
 				602CAE3F1984363700C9FE49 /* Frameworks */,
@@ -124,13 +164,10 @@
 		602CAE461984363700C9FE49 /* Phonagotchi */ = {
 			isa = PBXGroup;
 			children = (
-				AFEF852819F082EB00C5C416 /* bucket.png */,
-				AFEF852919F082EB00C5C416 /* apple.png */,
-				607C5D311985A13300501387 /* default.png */,
-				607C5D321985A13300501387 /* sleeping.png */,
-				607C5D331985A13300501387 /* grumpy.png */,
 				602CAE4F1984363800C9FE49 /* LPGAppDelegate.h */,
 				602CAE501984363800C9FE49 /* LPGAppDelegate.m */,
+				4124DA8A1DD53DC4000BF8BC /* Pet.h */,
+				4124DA8B1DD53DC4000BF8BC /* Pet.m */,
 				602CAE521984363800C9FE49 /* Main.storyboard */,
 				602CAE551984363800C9FE49 /* LPGViewController.h */,
 				602CAE561984363800C9FE49 /* LPGViewController.m */,
@@ -275,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				602CAE571984363800C9FE49 /* LPGViewController.m in Sources */,
+				4124DA8C1DD53DC4000BF8BC /* Pet.m in Sources */,
 				602CAE511984363800C9FE49 /* LPGAppDelegate.m in Sources */,
 				602CAE4D1984363700C9FE49 /* main.m in Sources */,
 			);

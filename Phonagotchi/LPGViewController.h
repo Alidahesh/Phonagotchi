@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface LPGViewController : UIViewController
+
+
+//-(void) panned : (UIPanGestureRecognizer);
 
 @end
